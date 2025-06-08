@@ -1,0 +1,224 @@
+:root {
+    --primary:rgb(24, 26, 28);
+    --secondary:rgba(255, 255, 255, 1);
+    --blueColor:rgba(15, 30, 147, 1);
+}
+
+#footerWrap {
+    display: grid;
+    background-color:var(--primary);
+    grid-area: footer;
+    grid-template-areas: "copyright genre bantuan";
+    grid-template-columns: auto 41% 20%;
+    padding: 20px;
+    color: var(--secondary);
+}
+
+#leftArea {
+    justify-content: center;
+    align-content: center;
+    grid-area: copyright;
+}
+
+#genreSection {
+    grid-area: genre;
+    background-color: transparent;
+    display: grid;
+    grid-template-areas:
+    "juduls juduls judul judul"
+    "aksi drama komedi sains"
+    "anak fantasi petualangan thriller"
+    "anime kejahatan perang thriller"
+    "britania kdrama romantis thriller";
+    gap: 7px;
+}
+
+#genreSection a {
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+#genreSection h6 {
+    grid-area: juduls;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.action {
+    grid-area: aksi;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.drama {
+    grid-area: drama;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.comedy {
+    grid-area: komedi;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.sains {
+    grid-area: sains;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.child {
+    grid-area: anak;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.fantasy {
+    grid-area: fantasi;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.adventure {
+    grid-area: petualangan;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.thriller {
+    grid-area: thriller;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.anime {
+    grid-area: anime;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.crime {
+    grid-area: kejahatan;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.war {
+    grid-area: perang;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.britain {
+    grid-area: britania;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.kdrama {
+    grid-area: kdrama;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.romance {
+    grid-area: romantis ;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+#helpSection {
+    display: flex;
+    grid-area: bantuan;
+    flex-direction: column;
+    gap: 7px;
+}
+
+#helpSection a {
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+#helpSection h6 {
+    grid-area: judul;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.FAQ {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.contact {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.privacy {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.condition {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.arrowRight {
+    display: none;
+}
+
+@media screen and (max-width:800px) {
+    #genreSection span {
+        font-size: 14px;
+    }
+
+    #helpSection span {
+        font-size: 14px;
+    }
+    .ImageLogoChill{
+        width: 20vh;
+        height: auto;
+    }
+
+    #footerWrap {
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width:650px) {
+    #genreSection span {
+        display: none;
+    }
+
+    #helpSection span {
+        display: none;
+    }
+
+    #leftArea span {
+        font-size: 10px;
+    }
+
+    .ImageLogoChill{
+        width: 18vh;
+        height: auto;
+    }
+
+    .arrowRight {
+        display: block;
+        margin-left: 2vh;
+    }
+    
+    h6 {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    }
+
+    #footerWrap {
+    padding: 10px;
+    }
+}

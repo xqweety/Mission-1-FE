@@ -1,0 +1,59 @@
+:root {
+    --primary:rgb(24, 26, 28);
+    --secondary:rgba(255, 255, 255, 1);
+    --blueColor:rgba(15, 30, 147, 1);
+}
+
+#cardContainer {
+    background-color: var(--primary);
+}
+
+#cardContainer h3 {
+    color: var(--secondary);
+    padding-top: 3vh;
+    padding-left: 5vh;
+}
+
+#cardContentContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vh;
+    padding: 3vh;
+    overflow-y: auto;
+}
+
+@media screen and (max-width:768px) {
+    #cardContentContainer {
+        gap: 3vh ;
+        padding: 2vh;
+    }
+
+    #cardContainer h3 {
+        font-size: 20px;
+        padding-top: 2vh;
+        padding-left: 3vh;
+    }
+
+    #cardContentContainer img {
+        width: 28vh;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:425px) {
+    #cardContentContainer {
+        gap: 1.3vh ;
+        padding: 1.5vh;
+    }
+    #cardContainer h3 {
+        font-size: 20px;
+        padding-top: 1.3vh;
+        padding-left: 1.1vh;
+    }
+    #cardContentContainer img {
+        width: 20vh;
+        height: auto;
+    }
+}
+

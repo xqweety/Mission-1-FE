@@ -1,0 +1,141 @@
+:root {
+    --primary:rgb(24, 26, 28);
+    --secondary:rgba(255, 255, 255, 1);
+    --blueColor:rgba(15, 30, 147, 1);
+}
+
+#navbarContainer {
+    background-color: var(--primary);
+    color: var(--secondary);
+    display: grid;
+    grid-template-areas: 
+    "logo submenu";
+    grid-template-columns: 
+    "90% auto";
+}
+
+#containerNavigationMenu {
+    background-color:var(--primary);
+    grid-area: logo;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    gap: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.2px;
+}
+
+.list a {
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+.listSubMenu a {
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+#menuNavigationBar {
+    display: grid;
+    grid-area: submenu;
+    justify-content: end;
+    gap: 10vh;
+    padding-left: 20px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    grid-template-areas: "icon panah";
+    background-color: var(--primary);
+}
+
+#menuNavigationBar li {
+    list-style: none;
+}
+
+#subMenu {
+    top: 5rem ;
+    right: 1rem;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    background-color: var(--primary);
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    padding: 1.1rem;
+    line-height: 3vh;
+}
+#subMenu img {
+    margin-right: 5px;
+}
+
+#arrowDown {
+    margin-right: -1.8vh;
+    margin-left: 1vh;
+}
+
+#logoNavigationBar2 {
+    display: none;
+}
+
+@media screen and (max-width:570px) {
+    #logoNavigationBar1 img {
+        height: 4.5vh;
+    }
+    .list a {
+        font-size: 2.3vh;
+        margin-left: 5px;
+    }
+
+    #containerNavigationMenu{
+        gap:1vh;
+    }
+}
+
+@media screen and (max-width:470px) {
+    #subMenu {
+        top: 10.6vh;
+    }
+    
+    #logoNavigationBar1 img {
+        display: none;
+    }
+
+    #logoNavigationBar2 {
+        display: block;
+    }
+
+    #logoNavigationBar2 img {
+        width: 4vh;
+    }
+
+    .list a {
+        font-size: 1.7vh;
+        margin-left: 2.5px;
+    }
+
+    #containerNavigationMenu {
+        gap:1vh;
+    }
+
+    #iconProfile {
+        width: 4vh;
+    }
+
+    #arrowDown {
+        width: 1.5vh;
+        margin-right: -50px;
+    }
+
+    #menuNavigationBar {
+        padding-left: 0px;
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+

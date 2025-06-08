@@ -1,0 +1,146 @@
+:root {
+    --primary:rgb(24, 26, 28);
+    --transparantPrimary:rgba(24, 26, 28, 0.84);
+    --greyColor:rgba(231, 227, 252, 0.23);
+    --colorFour:rgba(61, 65, 66, 1);
+    --secondary:rgba(255, 255, 255, 1);
+    --whiteSecondary:rgb(192, 194, 196);
+    --blueColor:rgba(15, 30, 147, 1);
+}
+
+#containerLoginBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#loginBox {
+    background-color: var(--primary);
+    align-items: center;
+    width: 529px;
+    height: 663px;
+    background: var(--transparantPrimary);
+    color: var(--secondary);
+    border-radius: 16px;
+}
+
+.inputBox {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    margin: 35px 0;
+}
+
+.inputBox input {
+    display: block;
+    justify-self: center;
+    width: 90%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 1px solid var(--greyColor);
+    border-radius: 24px;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    color: var(--whiteSecondary);
+    padding: 20px 45px 20px 20px;
+    margin: 5px 0px
+}
+
+.inputBox label {
+    margin-left: 3vh;
+    font-size: 18px;
+}
+
+#loginText {
+    margin-top: 2vh;
+    font-size: 4vh;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#welcomeText {
+    margin-top: -2.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+#ImageLogoChill {
+    margin-top: 3vh;
+    margin-left: 16vh;
+    width: 21vh;
+}
+
+#forgetBox {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 3vh;
+    padding-right: 3vh;
+    padding-top: .5vh;
+}
+
+#boxButton {
+    display: flex;
+    flex-direction: column;
+}
+
+#boxButton span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1vh;
+}
+
+
+#button {
+    display: block;
+    justify-self: center;
+    width: 90%;
+    height: 45px;
+    background: var(--colorFour);
+    border:none;
+    outline:none;
+    border-radius: 24px;
+    color: var(--secondary);
+    margin-top: 1vh;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    margin-left: 3vh;
+}
+
+#buttonGoogle {
+    display: block;
+    justify-self: center;
+    width: 90%;
+    height: 45px;
+    background: var(--colorFour);
+    border:none;
+    outline:none;
+    border-radius: 24px;
+    color: var(--secondary);
+    margin-top: 10px;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    margin-left: 3vh;
+}
+
+.DontHaveAccountText {
+    color: var(--whiteSecondary);
+}
+
+.Link {
+    color: var(--secondary);
+    text-decoration: none;
+}
+
+span a {
+    color: var(--secondary);
+    text-decoration: none;
+}
